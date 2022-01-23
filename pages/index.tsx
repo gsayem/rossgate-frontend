@@ -15,6 +15,7 @@ export default function Login() {
   const [loginWith, setLoginWith] = useState("mobile");
   const [inputCredentialEmail, setInputCredentialEmail] = useState("");
   const [inputCredentialMobile, setInputCredentialMobile] = useState("");
+  const [isValidForVarification, setIsValidForVarification] = useState(false);
   const onChangeInputCredential = (lw, e) => {
     setLoginWith(lw);
     if (lw === "mobile") {
@@ -36,21 +37,33 @@ export default function Login() {
     let isValid = false;
     if (loginWith === "email") {
       if (inputCredentialEmail || inputCredentialEmail.length > 0) {
-        isValid = true;
+        setIsValidForVarification(true);
+        router.push(
+          "verification?email=" +
+            inputCredentialEmail +
+            "&loginWith=" +
+            loginWith
+        );
       }
     } else if (loginWith === "mobile") {
       if (inputCredentialMobile || inputCredentialMobile.length > 0) {
         isValid = true;
+        setIsValidForVarification(true);
+        router.push(
+          "verification?mobile=" +
+            inputCredentialMobile +
+            "&loginWith=" +
+            loginWith
+        );
       }
     }
-    if (isValid) {
-      router.push("verification");
-    } else {
-      console.log("Invalid");
-    }
+    // if (isValid) {
+    // } else {
+    //   console.log("Invalid");
+    // }
   };
   return (
-    <>
+    <>    
       <Header />
       <MainContent>
         <div className="email-phone d-flex justify-content-center">
