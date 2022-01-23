@@ -1,0 +1,182 @@
+h6 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: "Manrope", sans-serif;
+}
+
+.btn-outline {
+  background-color: #fcfcfc;
+  border: 1px solid #bebec2;
+}
+
+.btn-continue {
+  color: #fff;
+  background-color: #885fff;
+  border-color: #885fff;
+}
+
+.btn-continue-disabled {
+  color: #fff;
+  background-color: #bebec2;
+  border-color: #bebec2;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #414047;
+  border-color: #414047;
+}
+
+.continue-button {
+  margin-bottom: 24px;
+}
+
+.continue-button .btn-continue {
+  width: 136px;
+}
+
+.continue-button .btn-continue-disabled {
+  width: 124px;
+}
+
+.continue-button .btn {
+  height: 40px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.41px;
+  padding: 8px 36px 8px 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.continue-button .btn:after {
+  content: "";
+  width: 9px;
+  height: 13px;
+  background: url("/images/icon-right.png") no-repeat 0 0;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+
+.login-button .btn {
+  min-width: 186px;
+  height: 40px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.41px;
+  padding: 8px 36px 8px 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.login-button .btn:after {
+  content: "";
+  width: 9px;
+  height: 13px;
+  background: url("/images/icon-right.png") no-repeat 0 0;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+
+.email {
+  padding: 0 7px 0 5px;
+  margin-bottom: 20px;
+}
+
+.email .form-control {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  height: 45px;
+  padding: 11px 20px;
+  background-color: #fcfcfc;
+  border-color: #bebec2;
+  border-radius: 8px;
+}
+
+.email .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.email .form-control:focus, .email .form-control.active-input {
+  border-width: 2px;
+  border-color: #885fff;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #fff;
+}
+
+.header {
+  height: 52px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dfdfe0;
+}
+
+.header img {
+  display: block;
+}
+
+.logo {
+  height: 100%;
+}
+
+.home-img {
+  margin-top: 6px;
+  margin-left: 3px;
+}
+
+.container-inner {
+  padding: 21px 21px 0 23px;
+}
+
+.email-phone {
+  margin: 0 auto 26px;
+}
+
+.email-phone .btn {
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  border-radius: 10px;
+}
+
+.email-phone .btn:first-child {
+  margin-right: 10px;
+}
+
+.intro-text {
+  font-size: 12px;
+  line-height: 16.34px;
+  color: #6f6e73;
+  padding-right: 21px;
+  padding-left: 16px;
+}
+
+.link {
+  color: #587be0;
+  text-decoration: none;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dfdfe0;
+  margin: 32px auto 24px;
+}
+/*# sourceMappingURL=style.css.map */
