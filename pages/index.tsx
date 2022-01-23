@@ -34,36 +34,38 @@ export default function Login() {
 
   const onContinue = async () => {
     // No validation for now
-    let isValid = false;
+    let inValid = false;
     if (loginWith === "email") {
       if (inputCredentialEmail || inputCredentialEmail.length > 0) {
         setIsValidForVarification(true);
-        router.push(
-          "verification?email=" +
-            inputCredentialEmail +
-            "&loginWith=" +
-            loginWith
-        );
+        inValid = true;
+        // router.push(
+        //   "verification?email=" +
+        //     inputCredentialEmail +
+        //     "&loginWith=" +
+        //     loginWith
+        // );
       }
     } else if (loginWith === "mobile") {
       if (inputCredentialMobile || inputCredentialMobile.length > 0) {
-        isValid = true;
+        inValid = true;
         setIsValidForVarification(true);
-        router.push(
-          "verification?mobile=" +
-            inputCredentialMobile +
-            "&loginWith=" +
-            loginWith
-        );
+        // router.push(
+        //   "verification?mobile=" +
+        //     inputCredentialMobile +
+        //     "&loginWith=" +
+        //     loginWith
+        // );
       }
     }
-    // if (isValid) {
-    // } else {
-    //   console.log("Invalid");
-    // }
+    if (inValid) {
+      router.push("verification");
+    } else {
+      console.log("Invalid");
+    }
   };
   return (
-    <>    
+    <>
       <Header />
       <MainContent>
         <div className="email-phone d-flex justify-content-center">

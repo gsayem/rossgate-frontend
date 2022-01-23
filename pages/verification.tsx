@@ -1,13 +1,4 @@
-
-import qs from "qs";
-import { Outlet, useLocation } from 'react-router-dom';
-
-// }
 export default function Verification() {
-  //const location = useLocation();
-  // const { mobile, email, loginWith } = qs.parse(
-  //   location?.search.substring(1)
-  // ) as Record<string, string>;
   const email="test@test.com"
   return (
     <>
