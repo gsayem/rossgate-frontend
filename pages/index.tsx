@@ -34,34 +34,22 @@ export default function Login() {
 
   const onContinue = async () => {
     // No validation for now
-    let inValid = false;
     if (loginWith === "email") {
       if (inputCredentialEmail || inputCredentialEmail.length > 0) {
         setIsValidForVarification(true);
-        inValid = true;
-        // router.push(
-        //   "verification?email=" +
-        //     inputCredentialEmail +
-        //     "&loginWith=" +
-        //     loginWith
-        // );
+        router.push({
+          pathname: "/verification",
+          query: { email: inputCredentialEmail, loginWith: loginWith },
+        });
       }
     } else if (loginWith === "mobile") {
       if (inputCredentialMobile || inputCredentialMobile.length > 0) {
-        inValid = true;
         setIsValidForVarification(true);
-        // router.push(
-        //   "verification?mobile=" +
-        //     inputCredentialMobile +
-        //     "&loginWith=" +
-        //     loginWith
-        // );
+        router.push({
+          pathname: "/verification",
+          query: { mobile: inputCredentialMobile, loginWith: loginWith },
+        });
       }
-    }
-    if (inValid) {
-      router.push("verification");
-    } else {
-      console.log("Invalid");
     }
   };
   return (
@@ -148,9 +136,9 @@ export default function Login() {
             <a className="link" href="#">
               Terms & Conditions
             </a>{" "}
-            ans
+            and {" "}
             <a className="link" href="#">
-              Privacy Policy
+            {" "}  Privacy Policy
             </a>
           </span>
         </div>

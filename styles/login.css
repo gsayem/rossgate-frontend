@@ -94,12 +94,7 @@ button {
   right: 10px;
 }
 
-.email {
-  padding: 0 7px 0 5px;
-  margin-bottom: 20px;
-}
-
-.email .form-control {
+.form-control {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -111,12 +106,31 @@ button {
   border-radius: 8px;
 }
 
-.email .form-control:focus {
+.form-control:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
+  border-color: #885fff;
 }
 
-.email .form-control:focus, .email .form-control.active-input {
+.form-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6f6e73;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.email {
+  padding: 0 7px 0 5px;
+  margin-bottom: 20px;
+}
+
+.email .form-control:focus,
+.email .form-control.active-input {
   border-width: 2px;
   border-color: #885fff;
 }
@@ -177,6 +191,105 @@ button {
   left: 6px;
 }
 
+.create-account {
+  margin-bottom: 28px;
+}
+
+.create-account.create-account-error {
+  margin-bottom: 16px;
+}
+
+.create-account .form-label img {
+  margin-left: 7px;
+}
+
+.create-account .form-control {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.create-account .group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.create-account .group:last-child {
+  margin-bottom: 0;
+}
+
+.create-account .group.error-group .form-label {
+  color: #e08080;
+}
+
+.create-account .group.error-group .form-control {
+  border-width: 2px;
+  border-right-width: 1px;
+  border-color: #e08080;
+  border-right-color: #bebec2;
+}
+
+.create-account .group.error-group .btn-id {
+  border-width: 2px;
+  border-left-width: 0;
+  border-color: #e08080;
+}
+
+.create-account .error {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  color: #e08080;
+  margin-top: 10px;
+}
+
+.account-form .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.account-form .btn-id {
+  background: #fcfcfc;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid #bebec2;
+  border-left-width: 0;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.complete-bar {
+  height: 3px;
+  background-color: #885fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.complete-bar.one {
+  width: 135px;
+}
+
+.complete-bar.two {
+  width: 265px;
+}
+
+.email-id {
+  margin-bottom: 4px;
+}
+
+.email-id a {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   background-color: #fff;
@@ -211,9 +324,22 @@ body {
   padding-left: 16px;
 }
 
+.paragraph-text {
+  font-size: 14px;
+  line-height: 19px;
+  color: #808080;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-bottom: 24px;
+}
+
 .link {
   color: #587be0;
   text-decoration: none;
+}
+
+.link.primary-link {
+  color: #885fff;
 }
 
 .divider {
@@ -226,6 +352,8 @@ body {
 .wrapper {
   width: 100%;
   max-width: 362px;
+  padding-bottom: 29px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 992px) {
@@ -254,14 +382,17 @@ body {
   font-weight: 500;
   color: #000;
   border-radius: 6px;
+  padding: 5px;
+  text-align: center;
 }
 
 .verification-row .form-control:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
-.verification-row .form-control:focus, .verification-row .form-control.active-input {
+.verification-row .form-control:focus,
+.verification-row .form-control.active-input {
   border-width: 2px;
   border-color: #885fff;
 }
