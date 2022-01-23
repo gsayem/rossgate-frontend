@@ -1,1 +1,14 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+![image](https://user-images.githubusercontent.com/15273731/150697793-75811d51-47ba-484f-8b51-b5d688c50f99.png)
+![image](https://user-images.githubusercontent.com/15273731/150697811-c1d35093-cb2d-474f-96a1-0424557895bb.png)
+![image](https://user-images.githubusercontent.com/15273731/150697830-56cb9f51-7fde-4975-95fe-ed143c3861da.png)
+![image](https://user-images.githubusercontent.com/15273731/150697855-2a5c5afa-f1ba-4f05-ad4b-797aa630aaf6.png)
+![image](https://user-images.githubusercontent.com/15273731/150697876-43cf1571-b64b-4e40-8bdc-fae4ed23bb75.png)
+![image](https://user-images.githubusercontent.com/15273731/150697886-aaed1d3c-4aca-4b6c-a15f-1fbb4ad18b28.png)
+![image](https://user-images.githubusercontent.com/15273731/150697904-283cd2f0-aec9-4cb1-bd26-19e3c5edbdde.png)
+![image](https://user-images.githubusercontent.com/15273731/150697912-943b136e-6f83-4c55-9434-88570415e164.png)
+![image](https://user-images.githubusercontent.com/15273731/150697925-cfe7ee70-67d8-46b8-8daa-baca399c34c5.png)
+![image](https://user-images.githubusercontent.com/15273731/150697935-6205bc98-9d6b-4f5e-a991-f6fe53c6cb23.png)
+![image](https://user-images.githubusercontent.com/15273731/150697961-e3d5b721-6614-43ad-98b8-857cdec4c039.png)
+![image](https://user-images.githubusercontent.com/15273731/150697978-43aa3acf-93fe-46bc-bad2-0711fdbed485.png)
+![image](https://user-images.githubusercontent.com/15273731/150697970-ff91ebc4-c918-49f8-b999-69404e3e67a0.png)
+
