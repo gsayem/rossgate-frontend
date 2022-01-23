@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
-import "../styles/login.css";
+import "../styles/style.css";
 import { useEffect } from "react";
 import type { AppProps } from "next/app";
 import { UserProvider as Auth0UserProvider } from "@auth0/nextjs-auth0";
