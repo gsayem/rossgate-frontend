@@ -1,3 +1,12 @@
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #414047;
+  letter-spacing: -0.154px;
+  margin-bottom: 10px;
+}
+
 h5 {
   font-size: 16px;
   line-height: 22px;
@@ -135,6 +144,27 @@ button {
   border-color: #885fff;
 }
 
+.searchbar-wrap {
+  padding-right: 18px;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.searchbar-wrap:before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background: url("/images/icon-search.png") no-repeat 0 0;
+  position: absolute;
+  top: 13px;
+  left: 11px;
+}
+
+.searchbar-wrap .form-control {
+  max-width: 269px;
+  padding-left: 39px;
+}
+
 .header {
   height: 52px;
   background-color: #f5f5f5;
@@ -172,6 +202,83 @@ button {
   right: 15px;
 }
 
+.header-nav {
+  height: 71px;
+  padding: 13px 24px 13px 22px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dfdfe0;
+}
+
+.home-screen {
+  margin-left: 25px;
+}
+
+.notifications {
+  margin-right: 12px;
+}
+
+.notifications img {
+  display: block;
+  max-width: 23px;
+  height: auto;
+}
+
+.settings img {
+  display: block;
+  max-width: 22px;
+}
+
+.user {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 174px;
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #dfdfe0;
+  padding: 9px 17px 8px 8px;
+  margin: 0 12px 0 15px;
+  border-radius: 30px;
+}
+
+.user .avatar {
+  margin-right: 8px;
+}
+
+.user .notificaiton-dropdwon {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #33373b;
+  letter-spacing: -0.15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.user .notificaiton-dropdwon:after {
+  content: "";
+  width: 11px;
+  height: 8px;
+  background: url("/images/icon-down.png") no-repeat 0 0;
+  position: absolute;
+  top: 7px;
+  right: 0;
+}
+
+.avatar {
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border: 2px solid #33373b;
+  border-radius: 50%;
+}
+
 .close-btn {
   width: 24px;
   height: 24px;
@@ -189,6 +296,11 @@ button {
   position: absolute;
   top: 7px;
   left: 6px;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
 }
 
 .create-account {
@@ -290,6 +402,136 @@ button {
   text-decoration: none;
 }
 
+.scrollable-content {
+  max-height: calc(100vh - 149px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.heading {
+  margin-bottom: 16px;
+}
+
+.heading h2 {
+  margin-bottom: 0;
+}
+
+.categories {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 150px;
+  max-width: 150px;
+  height: 94px;
+  padding: 12px 16px 11px 12px;
+  margin-right: 14px;
+  margin-bottom: 13px;
+  border-radius: 6px;
+}
+
+.categories.exchange {
+  background-color: #eaefff;
+}
+
+.categories.exchange .circle {
+  background-color: #587be0;
+}
+
+.categories.game {
+  background-color: #f5f5f5;
+}
+
+.categories.game .circle {
+  background-color: #414047;
+}
+
+.categories.marketplace {
+  background-color: #e2f9f3;
+}
+
+.categories.marketplace .circle {
+  background-color: #34ae91;
+}
+
+.categories.defi {
+  background-color: #fff3ec;
+}
+
+.categories.defi .circle {
+  background-color: #f98f54;
+}
+
+.categories.collectibles {
+  background-color: #ebf5ff;
+}
+
+.categories.utilities {
+  background-color: #f0ebff;
+}
+
+.categories .cat-link {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: rgba(51, 55, 59, 0.7);
+  text-decoration: none;
+}
+
+.see-all {
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.408;
+  color: #885fff;
+  padding-right: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.see-all:after {
+  content: "";
+  width: 8px;
+  height: 14px;
+  background: url("/images/chevron-right.png") no-repeat 0 0;
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+.recent-categories {
+  margin-bottom: 21px;
+}
+
+.recent-categories .recent-categories-block {
+  margin-bottom: 16px;
+}
+
+.recent-categories h2 {
+  font-weight: 600;
+  color: #414047;
+  margin-bottom: 5px;
+}
+
+.recent-categories .description {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6f6e73;
+  margin-bottom: 3px;
+}
+
+.recent-categories .how-users {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: #587be0;
+}
+
+.thumbnai-img {
+  margin-right: 10px;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   background-color: #fff;
@@ -297,6 +539,11 @@ body {
 
 .container-inner {
   padding: 21px 21px 0 23px;
+}
+
+.container-inner.container-inner-scroll {
+  max-height: calc(100vh - 71px);
+  padding: 11px 8px 0 16px;
 }
 
 .email-phone {
@@ -378,12 +625,12 @@ body {
   width: 40px;
   height: 40px;
   border-color: #cfcfcf;
+  padding: 5px;
   margin: 0 5px;
   font-weight: 500;
   color: #000;
-  border-radius: 6px;
-  padding: 5px;
   text-align: center;
+  border-radius: 6px;
 }
 
 .verification-row .form-control:focus {

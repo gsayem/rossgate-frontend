@@ -8,7 +8,7 @@ export default function SecureAccount() {
   const [confirmPassword, setConfirmPassword] = useState<string>();
 
   const onContinue = async () => {
-    router.push("createAccount");
+    router.push("experiences");
   };
   return (
     <>
@@ -68,6 +68,7 @@ export default function SecureAccount() {
         <div className="continue-button mb-0 d-flex justify-content-center align-items-center">
           <button
             type="button"
+            onClick={(e) => onContinue()}
             className={classNames({
               btn: true,
               "btn-continue": true,
